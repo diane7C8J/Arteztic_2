@@ -48,7 +48,7 @@ class Polls extends React.Component<{ view: string, myVotes: any[] }, { polls: a
   loadPolls(view: string) {
     let viewcat, datecomp;
     if (view === 'proposals') {
-      viewcat = 1;
+      viewcat = 3;
       datecomp = 'gt';
     } else if (view === 'questions') {
       viewcat = 2;

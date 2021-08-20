@@ -257,16 +257,28 @@ export const ProposalDetail = (props: any) => {
               Discuss on Discourse
             </a>
             <div className="proposalDetail-yourVote">
+            { pollData.metadata.numOptions === 2 ? (
               <Button
                 voted={ voteData.myvote === 1 }
                 onClick={()=>{handleVote(1)}} 
                 disabled={ !votePower.isAdmin }
-              >{ pollIpfs.opt1 }</Button>
+              >{ "Against" }</Button>
+                ) : <Button
+                voted={ voteData.myvote === 1 }
+                onClick={()=>{handleVote(1)}} 
+                disabled={ !votePower.isAdmin }
+              >{ pollIpfs.opt1 }</Button> }
+                { pollData.metadata.numOptions === 2 ? (
               <Button
                 voted={ voteData.myvote === 2 }
                 onClick={()=>{handleVote(2)}} 
                 disabled={ !votePower.isAdmin }
-              >{ pollIpfs.opt2 }</Button>
+              >{ "For" }</Button>
+                ) : <Button
+                voted={ voteData.myvote === 2 }
+                onClick={()=>{handleVote(2)}} 
+                disabled={ !votePower.isAdmin }
+              >{ pollIpfs.opt2 }</Button> }
               { pollData.metadata.numOptions > 2 ? (
                 <Button
                   voted={ voteData.myvote === 3 }

@@ -22,7 +22,7 @@ export const ProposalCard = ({...props}) => {
         <div className="proposalCard-identifiers">
           <div className="proposalCard-id">#{ poll.key.substr(0,8) }...</div>
           <div className="proposalCard-type">
-            { poll.value.metadata.category === '1' && (
+            { poll.value.metadata.category === '3' && (
               <>Proposal 
                 {/* <ProposalIcon /> */}
               </>
@@ -36,7 +36,7 @@ export const ProposalCard = ({...props}) => {
         </div>
         { voted !== 0 && (
           <div className="proposalCard-yourVote">
-            Voted <b className="text-s-bold">{ poll.value.metadata.category === '1' ? 'Option ' + voted : (voted === "1" ? 'For' : 'Against') }</b>
+            Voted <b className="text-s-bold">{ (poll.value.metadata.category === '1' || poll.value.metadata.category === '3') ? 'Option ' + voted : (voted === "1" ? 'For' : 'Against') }</b>
           </div>
         )}
         <div className={`proposalCard-voteStatus ${ ended ? 'proposalCard-voteStatus--ended' : ''}`}>
