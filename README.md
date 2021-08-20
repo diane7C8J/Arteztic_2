@@ -115,11 +115,5 @@ The third step is about creating projects together and amplifying the impact of 
 - Adaptation of our Governance Mechanism to vote on project proposals
 - Creation of a discussion platform to discuss and debate the projects (more likely to be Discourse)
 
-## Authors
-Contributors names and contact info
-
 ## License
-TBC 
-
-## Acknowledgments
-TBC
+This project is free to be used as outlined in the MIT License. Refer to the file LICENSE for more details.
