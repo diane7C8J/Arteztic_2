@@ -16,6 +16,9 @@ For our MVP, we are focusing on onboarding new members through a governance mech
 
 *A note on our name: the word Arteztic can be written ArTEZtic for a clearer reference to the Tezos blockchain, on which our artistic project is being built. It also merges with the word Arctic, to reference the environmental nature of our mission, and of course the word Artistic.*
 
+## Challenge
+The proposed DAO will provide an environment of sustainable practice for artists concerned with the key issues of environmental impact, social impact and diversity, concerns that are not currently prioritised in either the traditional art world or the PoW NFT platforms. It will provide an alternative system of support for all artists, negating the old systems of exclusive schooling, opaque patronage, cronyism, and a collector focused economy.
+
 ## Vision
 An independent coalition of NFT artists with a shared-goal: prioritising the environment in the creation of art. 
 
