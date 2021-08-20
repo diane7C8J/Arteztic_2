@@ -37,16 +37,16 @@ This DAO will run on the Tezos Blockchain and be self-sustained thanks to the do
 ## DAO Stack
 
 ## Functionalities for a smart contract MVP
-> Intro
+* Intro
 For the Gitcoin Hackathon "Tezos Hackathon: NFT Me, You Can DAO It", we decided to create the MVP of a smart contract to welcome and review applications from new members,  supported by a solid white paper and a simple introduction webpage.
 Indeed, we realized that our first step should be able to welcome members in the DAO, before even starting to accept donations, vote on the projects, on the roster of NGOs or even on the NFT we want to exhibit on our website. So, for this MVP we need to be able to introduce the DAO, accept new members applications and vote to approve or reject the application.
 
-> Smart Contract Functionalities: 
+* Smart Contract Functionalities: 
 - Create Application (via a simple application form with the minimum elements on chain and the rest on IPFS).
 - Vote (Vote Against/For application)
 - Add/Remove DAO Member (which will be used to accept Members based on votes and give them right to vote for the next proposal period )
 
-> Contract deployed on Florence contains  entry points 
+* Contract deployed on Florence contains  entry points 
    * Add Administrator (which adds members into DAO taking certain Criteria into consideration based on votes on the POLL) 
    * Remove Administrator (which now can be used to remove a DAO member if a proposal ever comes to remove)(V2)
    * Create Poll 
