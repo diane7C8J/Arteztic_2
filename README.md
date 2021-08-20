@@ -37,7 +37,7 @@ This DAO will run on the Tezos Blockchain and be self-sustained thanks to the do
 ## DAO Stack
 
 ## Functionalities for a smart contract MVP
-**Intro**
+**Intro:**
 For the Gitcoin Hackathon "Tezos Hackathon: NFT Me, You Can DAO It", we decided to create the MVP of a smart contract to welcome and review applications from new members,  supported by a solid white paper and a simple introduction webpage.
 Indeed, we realized that our first step should be able to welcome members in the DAO, before even starting to accept donations, vote on the projects, on the roster of NGOs or even on the NFT we want to exhibit on our website. So, for this MVP we need to be able to introduce the DAO, accept new members applications and vote to approve or reject the application.
 
@@ -82,11 +82,6 @@ $ npm start
 
 ## Authors
 Contributors names and contact info
-
-## Version History
-
-* 0.1
-    * Initial Release
 
 ## License
 TBC 
