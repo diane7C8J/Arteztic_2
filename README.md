@@ -8,16 +8,28 @@ Fully community led, the DAO will decide collectively on the onboarding of new m
 
 The DAO will also have a public facing website presenting the group and its purpose, a permanent online gallery showcasing artworks from the members, temporary virtual exhibitions, the presentation of our members-led projects and an ongoing call for members.
 
-For our MVP, we are focusing on onboarding new members through a governance mechanism. The next steps are as follows:
+For our MVP, we are focusing on onboarding new members through a governance mechanism (application + voting mechanism).
 
+The next steps are as follows:
 - Enable art donations in order to have a shared-pool of funds to be distributed between the artists, the members and a roster of selected NGO's
 - Create a permanent autonomous online exhibition with the environmental NFT art donated
 - Enable the production and support of projects developed directly by the DAO
 
 *A note on our name: the word Arteztic can be written ArTEZtic for a clearer reference to the Tezos blockchain, on which our artistic project is being built. It also merges with the word Arctic, to reference the environmental nature of our mission, and of course the word Artistic.*
 
+-------------
+
 ## Challenge
 The proposed DAO will provide an environment of sustainable practice for artists concerned with the key issues of environmental impact, social impact and diversity, concerns that are not currently prioritised in either the traditional art world or the PoW NFT platforms. It will provide an alternative system of support for all artists, negating the old systems of exclusive schooling, opaque patronage, cronyism, and a collector focused economy.
+
+## Functionalities for a smart contract MVP
+For the Gitcoin Hackathon "Tezos Hackathon: NFT Me, You Can DAO It", we decided to create the MVP of a smart contract to welcome and review applications from new members,  supported by a solid white paper and a simple introduction webpage.
+Indeed, we realized that our first step should be able to welcome members in the DAO, before even starting to accept donations, vote on the projects, on the roster of NGOs or even on the NFT we want to exhibit on our website. So, for this MVP we need to be able to introduce the DAO, accept new members applications and vote to approve or reject the application.
+
+Smart Contract Functionalities: 
+- Create Application (via a simple application form with the minimum elements on chain and the rest on IPFS).
+- Vote (Vote Against/For application)
+- Add/Remove DAO Member (which will be used to accept Members based on votes and give them right to vote for the next proposal period )
 
 ## Vision
 An independent coalition of NFT artists with a shared-goal: prioritising the environment in the creation of art. 
