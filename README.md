@@ -22,19 +22,20 @@ The next steps are as follows:
 ## Challenge
 The proposed DAO will provide an environment of sustainable practice for artists concerned with the key issues of environmental impact, social impact and diversity, concerns that are not currently prioritised in either the traditional art world or the PoW NFT platforms. It will provide an alternative system of support for all artists, negating the old systems of exclusive schooling, opaque patronage, cronyism, and a collector focused economy.
 
-## Vision
-An independent coalition of NFT artists with a shared-goal: prioritising the environment in the creation of art. 
-
-## Mission 
-The idea of this coalition is to bring together ‘green’ NFT artists and use the power of community and collaboration to move away from the restrictive models of the conventional art market, and the analogous PoW NFT model.
-An ideals-driven use of PoS blockchain technology in combination with a governance DAO will hopefully be able to introduce a new form of collective value creation without traditional intermediaries, and promote the decentralized distribution of further value for an expanding community.
-This DAO will run on the Tezos Blockchain and be self-sustained thanks to the donations of art by artists - the funds generated from the sale of these artworks will be distributed in a way as to further the vision of the DAO and encourage and invite new members.
+## Goals
+Our ambition serves personal, collective, and planetary goals: 
+1. **Amplify the impact of purpose-driven NFT artists** by joining forces to foster climate awareness and climate action / lobbying for climate justice through art with collective initiatives (shared communication, collaborations, collective exhibitions, etc)
+2. **Create a self-sustainable model for purpose-driven art production** / finding an alternative model to the traditional art industry by enabling genuine sustainability.
+3. **Create the first online gallery of NFT art acting for the planet**
+4. **Directly support purpose-driven NGOs** with sales of donated art and create a new culture of the arts supporting purpose-driven projects.
 
 ## Governance Mechanism
-
-## Reputation Token
-
-## DAO Stack
+One token, many outcomes. Our reputation token ARTEZ allows members to: 
+- stake for governance
+- stake for online exhibition curation
+- stake for membership access
+- support a NGOs
+- stake to start a new project
 
 ## Functionalities for a smart contract MVP
 **Intro:**
@@ -78,7 +79,39 @@ $ yarn install
 $ yarn build
 $ npm start
 ```
+## Roadmap and next steps
+### **V1 - the first step of a DAO is a solid and simple foundation**
+For our first MVP, we wanted to focus on building the community of members first because, without members to vote, we can't decide on the next steps to take. 
+So, to create the foundations of our DAO, we decided to work on: 
+- a solid white paper
+- an informative web page to present the DAO
+- a governance mechanism to accept new members applications (simple smart contract)
+- a roadmap with the next steps expressing the ambitions of the DAO
 
+### **V2 - towards community**
+The second step of our development process is the creation of a secure and efficient UI well binded to our current smart contract;
+1. UI functionalities: 
+    - Profile View (To view the Badge, TzProfile to verify the identity of the applicants, Number of votes voted, etc)
+    - Create Poll (DAO members can create Poll with all the Required Fields)
+    - View Past Polls, Questions
+    - View a Poll with all the metadata, number of votes and the address of the DAO members who voted.
+2. security audit of the front end
+3. proper website welcoming with the call for members
+
+### **V3 - towards a peers shared-pool of funds**
+The second step of this DAO is about building polls to be shared among members:
+- Accept NFT donations
+- Updating smart contract to be compatible with even more Governance on proposals, questions, reputation token functionalities to be merged with activities done by DAO members.
+- Splitting sales smart contract (adding collaborative aspect to the sales including multi signing for artists collaborating on a NFT, and multi beneficiaries)
+- Adaptation of our Governance Mechanism to vote on a roster of NGOs
+- Autonomous and decentralised Curation Mechanism to feed our permanent online exhibition / marketplace directly connected to hic et nunc through hicdex
+- Automatized social media promotion covering the approved votes
+
+### **V4 - amplifying our impact**
+The third step is about creating projects together and amplifying the impact of each artists with the support of the DAO:
+- Submit projects to be produced and supported by the DAO (temporary exhibition, physical exhibition, art activism campaign, participative artwork, and more to be invented)
+- Adaptation of our Governance Mechanism to vote on project proposals
+- Creation of a discussion platform to discuss and debate the projects (more likely to be Discourse)
 
 ## Authors
 Contributors names and contact info
