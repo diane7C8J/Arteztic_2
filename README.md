@@ -34,8 +34,38 @@ This DAO will run on the Tezos Blockchain and be self-sustained thanks to the do
 ## DAO Stack
 
 ## MVP (21/08/2021)
+Contract deployed on Florence contains  entry points 
+   * Add Administrator (which adds members into DAO taking certain Criteria into consideration based on votes on the POLL) 
+   * Remove Administrator (which now can be used to remove a DAO member if a proposal ever comes to remove)(V2)
+   * Create Poll 
+      * Polls can have multiple options ranging from 1-7 
+      * Poll data stored on Smart contract - 
+         - PollID (IPFS CID as well as its the unique identifier for polls)
+         - Metadata contains start_time, end_time (which would be automatically populated when creating the poll with the time gap of 30 Days and can be changed based on community             proposal)
+      * Poll Data stored on IPFS -
+         - Anything related to the proposal will be stored on IPFS and will be fetched dynamically on to the proposals page real-time.
+         - Currently for applicants we store: website/twitter/instagram or NFT link of the applicant, short Bio
+
+      * Polls contains 3 categories  1)Proposals, 2) Questions(V2), 3) Applications
+   * Vote - vote entry point will take poll_id and poll_option and update the storage on smart contract
+   * In addition to them, we have several mappings to make use of votes., and show statastics based on the data.
 
 ## Developers Tutorial
+There are two parts of this repo,
+1) Members Facing app - which lets you vote on a proposal/question/application
+2) applicants app - which lets artists/devs create an application to be a member of DAO.
+The contract we use for handling these operations on florence net : 
+To run this application : Clone this repo., Create an .env file and enter valid details for the respective keys using .env.sample and the contract address present above. 
+```
+$ git clone https://github.com/diane7C8J/Arteztic_2
+$ cd poll-taquito
+# install dependencies
+$ yarn install
+
+# build for production and launch server
+$ yarn build
+$ npm start
+```
 
 
 ## Authors
