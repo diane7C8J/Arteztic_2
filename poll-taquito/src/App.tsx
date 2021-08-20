@@ -42,6 +42,20 @@ export async function getMyVotes(address: string) {
     .then(response => response.json())
 }
 
+async function isAdmin(address:string){
+  return await fetch(`https://api.${process.env.REACT_APP_NETWORK}.tzkt.io/v1/contracts/${process.env.REACT_APP_CONTRACT_ADDRESS}/storage?path=administrator`)
+  .then(response => response.json())
+  .then(data => {
+    // if address is in response, then it is an admin
+    // console.log(data);
+    return typeof data[address] === 'object';
+  })
+  .catch(err => {
+    console.log(err);
+    return false;
+  });
+}
+
 const queryBadgeCheck = `query BadgeCheck($wallet: String = "") {
   hic_et_nunc_token(where: {id: {_eq: "93229"}}) {
     metadata
@@ -88,12 +102,12 @@ function App() {
   const { connected, disconnect, activeAccount, connect } = useWallet();
   const beaconWallet = useBeaconWallet();
   const [votePower, setVotePower] = React.useState({
-    count: 0, tzprof: false, hDAO: false, badge: false
+    count: 0, tzprof: false, hDAO: false, badge: false, isAdmin: false
   });
   const [myVotes, setMyVotes] = React.useState([]);
   function getVotePower(address: string) {
     var votePower = {
-      count: 0, tzprof: false, hDAO: false, badge: false
+      count: 0, tzprof: false, hDAO: false, badge: false, isAdmin: false
     };
     Promise.all([
       hasTzProfiles(address).then(has => {
@@ -113,6 +127,12 @@ function App() {
           votePower.count++
           votePower.hDAO = true
         }
+      }),
+      isAdmin(address).then(has =>  {
+        if (has) {
+          votePower.count++
+          votePower.isAdmin = true
+        }
       })
     ]).then(() => {
       setVotePower(votePower);
@@ -130,7 +150,7 @@ function App() {
       getVotePower(activeAccount.address);
       getMyVotes(activeAccount.address).then(myVotes => {
         setMyVotes(myVotes)
-      })
+      });
     }
   }, [activeAccount]);
   

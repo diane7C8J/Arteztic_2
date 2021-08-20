@@ -231,12 +231,12 @@ export const ProposalDetail = (props: any) => {
               <Button
                 voted={ voteData.myvote === 2 }
                 onClick={()=>{handleVote(2)}}
-                //disabled={ !votePower.tzprof }
+                disabled={ !votePower.isAdmin }
               >AGAINST <VoteAgainstIcon/></Button>
               <Button
                 voted={ voteData.myvote === 1 }
                 onClick={()=>{handleVote(1)}}
-                //disabled={ !votePower.tzprof }
+                disabled={ !votePower.isAdmin }
               >FOR <VoteForIcon/></Button>
             </div>
             { votePower.tzprof || (
@@ -260,50 +260,50 @@ export const ProposalDetail = (props: any) => {
               <Button
                 voted={ voteData.myvote === 1 }
                 onClick={()=>{handleVote(1)}} 
-                disabled={ !votePower.tzprof }
+                disabled={ !votePower.isAdmin }
               >{ pollIpfs.opt1 }</Button>
               <Button
                 voted={ voteData.myvote === 2 }
                 onClick={()=>{handleVote(2)}} 
-                disabled={ !votePower.tzprof }
+                disabled={ !votePower.isAdmin }
               >{ pollIpfs.opt2 }</Button>
               { pollData.metadata.numOptions > 2 ? (
                 <Button
                   voted={ voteData.myvote === 3 }
                   onClick={()=>{handleVote(3)}} 
-                  disabled={ !votePower.tzprof }
+                  disabled={ !votePower.isAdmin }
                 >{ pollIpfs.opt3 }</Button>
                 ) : '' }
               { pollData.metadata.numOptions > 3 ? (
                 <Button
                   voted={ voteData.myvote === 4 }
                   onClick={()=>{handleVote(4)}} 
-                  disabled={ !votePower.tzprof }
+                  disabled={ !votePower.isAdmin }
                 >{ pollIpfs.opt4 }</Button>
               ) : '' }
               { pollData.metadata.numOptions > 4 ? (
                 <Button
                   voted={ voteData.myvote === 5 }
                   onClick={()=>{handleVote(5)}} 
-                  disabled={ !votePower.tzprof }
+                  disabled={ !votePower.isAdmin }
                 >{ pollIpfs.opt5 }</Button>
               ) : '' }
               { pollData.metadata.numOptions > 5 ? (
                 <Button
                   voted={ voteData.myvote === 6 }
                   onClick={()=>{handleVote(6)}} 
-                  disabled={ !votePower.tzprof }
+                  disabled={ !votePower.isAdmin }
                 >{ pollIpfs.opt6 }</Button>
               ) : '' }
               { pollData.metadata.numOptions > 6 ? (
                 <Button
                   voted={ voteData.myvote === 7 }
                   onClick={()=>{handleVote(7)}} 
-                  disabled={ !votePower.tzprof }
+                  disabled={ !votePower.isAdmin }
                 >{ pollIpfs.opt7 }</Button>
               ) : '' }
             </div>
-            { votePower.tzprof || (
+            { votePower.isAdmin || (
               <span>Sync your <a href='https://tzprofiles.com/' rel='noreferrer' target='_blank'>TzProfiles</a> verified wallet to enable voting</span>
              ) }
           </footer>
