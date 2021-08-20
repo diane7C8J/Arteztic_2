@@ -1,5 +1,7 @@
 # ArTEZtic
 Through a DAO, we want to create a self-sustained coalition of NFT artists to foster climate awareness and nudge climate action. 
+Webpage: http://www.arteztic.xyz/
+Smart contract deployed on Florence Testnet: 
 
 ## Summary
 The Arteztic DAO will act as a decentralised autonomous NGO in service of environmental causes within the arts. We are a group of environmentally-minded NFT artists who have decided to work together to amplify the impact of our artworks, identify and adopt sustainable working practices, and onboard and support the wider community via a donation funding mechanism.
