@@ -70,6 +70,7 @@ There are two parts of this repo,
 1) Members Facing app - which lets you vote on a proposal/question/application
 2) applicants app - which lets artists/devs create an application to be a member of DAO.
 The contract we use for handling these operations on florence net : [KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB](https://better-call.dev/florencenet/KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB/operations)
+
 To run this application : Clone this repo., Create an .env file and enter valid details for the respective keys using .env.sample and the contract address present above. 
 ```
 $ git clone https://github.com/diane7C8J/Arteztic_2
