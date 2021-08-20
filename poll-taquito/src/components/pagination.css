@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+}
+
+.pagination-page,
+.pagination-next,
+.pagination-prev {
+  height: 34px;
+  line-height: 34px;
+  padding-left: var(--grid-unit);
+  padding-right: var(--grid-unit);
+  text-decoration: none;
+}
+
+.pagination-page--active {
+  background: var(--gray-10);
+}

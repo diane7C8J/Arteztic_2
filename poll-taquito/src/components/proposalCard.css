@@ -1,0 +1,64 @@
+.proposalCard {
+  padding: calc(var(--grid-unit) * 2);
+  background: var(--gray-10);
+}
+
+.proposalCard-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  color: var(--gray-80);
+  font-size: var(--font-s);
+  text-transform: uppercase;
+}
+
+.proposalCard-name {
+  margin: var(--grid-unit) 0;
+  font-size: var(--font-h2);
+  font-weight: var(--font-bold);
+  min-height: 2.5em;
+}
+
+.proposalCard-yourVote,
+.proposalCard-voteStatus--ended {
+  margin-top: calc(var(--grid-unit) / -4);
+  padding: calc(var(--grid-unit) / 4) var(--grid-unit);
+  background: var(--gray-0);
+  color: var(--gray-100);
+}
+
+.proposalCard-voteStatus--ended {
+  background: var(--gray-20);
+}
+
+.proposalCard-voteResult {
+  margin: calc(var(--grid-unit) * 3);
+}
+
+.proposalCard-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .proposalCard {
+    padding: calc(var(--grid-unit) * 5);
+  } 
+
+  .proposalCard-identifiers {
+    display: flex;
+  }
+
+  .proposalCard-type {
+    margin-left: var(--grid-unit);
+  }
+
+  .proposalCard-footer {
+    flex-direction: row;
+  }
+  .proposalCard-voteResult {
+    margin: unset;
+  }
+}

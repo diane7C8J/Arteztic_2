@@ -1,0 +1,54 @@
+@import 'assets/fonts/iosevka.css';
+@import 'assets/styles/design-tokens.css';
+@import 'assets/styles/utility-classes.css';
+@import 'assets/styles/typography.css';
+
+body {
+  margin: 0;
+  font-family: 'Iosevka Web', 'Courier New', monospace;
+  line-height: var(--line-height-tight);
+  font-size: var(--font-m);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+code {
+  font-family: 'Iosevka Web', 'Courier New', monospace;
+}
+
+hr {
+  border-color: var(--gray-20);
+  border-style: solid;
+  border-bottom: 0;
+  margin-top: calc(var(--grid-unit) * 2);
+  margin-bottom: calc(var(--grid-unit) * 2);
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 96%;
+}
+
+dt {
+  margin-top: calc(var(--grid-unit) * 2);
+  margin-bottom: calc(var(--grid-unit) / 2);
+}
+
+@media (min-width: 1024px) {
+  .wrap { 
+    width: 70%;
+    max-width: 1400px;
+  }
+
+  hr {
+    margin-top: calc(var(--grid-unit) * 4);
+    margin-bottom: calc(var(--grid-unit) * 4);
+  }
+}

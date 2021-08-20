@@ -1,0 +1,27 @@
+.button {
+  --button-height: calc(var(--grid-unit) * 4);
+  display: inline-block;
+  height: var(--button-height);
+  padding-left: var(--button-height);
+  padding-right: var(--button-height);
+  color: var(--gray-0);
+  background: var(--gray-100);
+  border: none;
+  font-family: var(--base-font-family);
+  font-size: var(--font-m); 
+  font-weight: var(--font-normal);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:not(.disabled):hover {
+  background: var(--gray-80);
+}
+
+.button.disabled {
+  background: var(--gray-50);
+}
+
+.button.voted {
+  border: 5px solid var(--gray-50);
+}
