@@ -1,7 +1,8 @@
 # ArTEZtic
 Through a DAO, we want to create a self-sustained coalition of NFT artists to foster climate awareness and nudge climate action.   
 Webpage: http://www.arteztic.xyz/  
-Smart contract deployed on Florence Testnet: 
+White paper: https://arteztic.notion.site/White-Paper-e89e81fb7617434ea1612d42dae70a96  
+Smart contract deployed on Florence Testnet: [KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB](https://better-call.dev/florencenet/KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB/operations)
 
 ## Summary
 The Arteztic DAO will act as a decentralised autonomous NGO in service of environmental causes within the arts. We are a group of environmentally-minded NFT artists who have decided to work together to amplify the impact of our artworks, identify and adopt sustainable working practices, and onboard and support the wider community via a donation funding mechanism.
@@ -69,7 +70,8 @@ Indeed, we realized that our first step should be able to welcome members in the
 There are two parts of this repo,
 1) Members Facing app - which lets you vote on a proposal/question/application
 2) applicants app - which lets artists/devs create an application to be a member of DAO.
-The contract we use for handling these operations on florence net : 
+The contract we use for handling these operations on florence net : [KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB](https://better-call.dev/florencenet/KT1C1jMMzVi9jP7JGKrkVbSNMZpBZ3dNCspB/operations)
+
 To run this application : Clone this repo., Create an .env file and enter valid details for the respective keys using .env.sample and the contract address present above. 
 ```
 $ git clone https://github.com/diane7C8J/Arteztic_2
