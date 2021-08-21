@@ -1,0 +1,38 @@
+.disabled {
+  opacity: 0.5;
+}
+
+*:focus {
+  outline: 5px solid blue;
+}
+/**
+ * Undo the above focused button styles when the element received focus
+ * via mouse click or touch, but not keyboard navigation.
+ */
+*:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+.pageContents--centered {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.pageHeader {
+  margin-bottom: calc(var(--grid-unit) * 3);
+}
+
+.pageHeader--centered {
+  text-align: center;
+}
+
+.pageSection {
+  margin-bottom: calc(var(--grid-unit) * 3);
+}
+
+@media screen and (min-width: 1024px) {
+  .pageHeader {
+    margin-top: calc(var(--grid-unit) * 5);
+    margin-bottom: calc(var(--grid-unit) * 5);
+  }
+}
