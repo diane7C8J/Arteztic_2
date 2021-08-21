@@ -1,6 +1,7 @@
 # ArTEZtic
 Through a DAO, we want to create a self-sustained coalition of NFT artists to foster climate awareness and nudge climate action.   
 Webpage: http://www.arteztic.xyz/  
+White paper: https://arteztic.notion.site/White-Paper-e89e81fb7617434ea1612d42dae70a96
 Smart contract deployed on Florence Testnet: 
 
 ## Summary
